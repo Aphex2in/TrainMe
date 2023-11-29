@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>TrainMe</title>
+</head>
+
+<body>
+  <form>
+    <input type="radio" id="Exer" autocomplete="off" name="type" value="Exercises">
+    <label for="Exer">Exercises</label><br>
+    <input type="radio" id="Prog" autocomplete="off" name="type" value="Program">
+    <label for="Prog">Program</label><br><br>
+
+    <label for="choice" id="choiceL"></label><br>
+    <select name="choice" id="choice">
+      <option value="1">One day</option>
+      <option value="2">Two days</option>
+      <option value="3">Three days</option>
+      <option value="4">Four days</option>
+      <option value="5">Five days</option>
+      <option value="6">Six days</option>
+    </select> <br><br>
+    <select name="choice2" id="choice2">
+      <option value="Chest">Chest</option>
+      <option value="Back">Back</option>
+      <option value="Triceps">Triceps</option>
+      <option value="Biceps">Biceps</option>
+      <option value="Legs">Legs</option>
+      <option value="Forearms">Forearms</option>
+    </select> <br><br>
+    
+
+    <table id="exercise-table">
+      <tr>
+        <th>Name</th>
+        <th>Sets x Reps</th>
+        <th>Instructions</th>
+        <th>Summarized</th>
+      </tr>
+    </table>
+
+    <p id="respond"></p>
+  </form>
+  <div class="col-3">
+    <div class="snippet" data-title="dot-bouncing">
+      <div class="stage">
+        <div class="dot-bouncing" id="wait"></div>
+      </div>
+    </div>
+  </div> <br>
+  <button id="submit-btn">Submit</button>
+</body>
+
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,125 @@
+#choice {
+  display: none;
+}
+
+#choice2 {
+  display: none;
+}
+
+#wait {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Adjust the height as needed */
+  margin: 20px 0; /* Add margin for spacing */
+}
+
+#wait::before {
+  content: "⚽🏀🏐";
+  display: var(--display);
+  position: relative;
+  animation: dot-bouncing 1s infinite;
+}
+
+@keyframes dot-bouncing {
+  0% {
+    top: -20px;
+    animation-timing-function: ease-in;
+  }
+  34% {
+    transform: scale(1, 1);
+  }
+  35% {
+    top: 20px;
+    animation-timing-function: ease-out;
+    transform: scale(1.5, 0.5);
+  }
+  45% {
+    transform: scale(1, 1);
+  }
+  90% {
+    top: -20px;
+  }
+  100% {
+    top: -20px;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+form {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+select {
+  padding: 5px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #8b0000; /* Dark red color */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 30px; /* Increase padding for a larger button */
+  cursor: pointer;
+  display: block;
+  margin: 0 auto 10px; /* Center the button horizontally */
+  width: 150px; /* Adjust the width as needed */
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5e0000; /* Darker red on hover */
+}
+
+table {
+  margin: 20px auto;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+#respond {
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    padding: 10px;
+  }
+  button {
+    width: 100%;
+  }
+}
