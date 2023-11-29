@@ -1,5 +1,5 @@
 
-const API_KEY = "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";
+const API_KEY = "YOUR_API_KEY";
 
 var exer = false;
 var prog = false;
